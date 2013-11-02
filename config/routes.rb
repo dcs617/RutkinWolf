@@ -1,4 +1,31 @@
 RutkinWolf::Application.routes.draw do
+
+  get 'wolf' => 'pages#wolf'
+
+  get 'mitchell-rutkin' => 'pages#rutkin'
+
+  get 'will-and-trusts' => 'pages#trusts'
+
+  get 'business-law' => 'pages#business'
+
+  get 'employment-discrimination' => 'pages#discrimination'
+
+  get 'real-estate' => 'pages#realestate'
+
+  get 'family-law' => 'pages#familylaw'
+
+  get 'labor-law' => 'pages#laborlaw'
+
+  get 'estates' => 'pages#estates'
+
+  get 'divorce' => 'pages#divorce'
+
+  get 'litigation' => 'pages#litigation'
+
+  get 'attorney-profiles' => 'pages#about'
+
+  get 'contact' => 'pages#contact'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +75,7 @@ RutkinWolf::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'pages#home'
 
   # See how all your routes lay out with "rake routes"
 
